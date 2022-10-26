@@ -21,6 +21,8 @@ data_app.root = __dirname;
 data_app.config = config;
 data_app.count = 0;
 
+app.use(express.static(__dirname + '/public'));
+
 var execPreApp = function ()
 {
   next=execPreApp;
